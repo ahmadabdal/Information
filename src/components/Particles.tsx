@@ -12,8 +12,8 @@ const Particles: React.FC = () => {
     let particlesArray: Particle[] = [];
     let animationFrameId: number;
 
-    const particleColor = "rgba(100, 181, 246, 0.5)";
-    const lineColorStart = "140, 158, 255";
+    const particleColor = "rgba(0, 5, 10, 0.5)";
+    const lineColorStart = "100, 258, 255";
 
     const setCanvasSize = () => {
       canvas.width = window.innerWidth;
@@ -147,7 +147,11 @@ const Particles: React.FC = () => {
   }, []);
 
   return (
-    <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full z-0" />
+    <canvas
+      ref={canvasRef}
+      className="fixed top-0 left-0 w-full h-full z-0"
+      style={{ backgroundColor: "#000" }}
+    />
   );
 };
 

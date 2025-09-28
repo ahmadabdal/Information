@@ -5,45 +5,43 @@ import { CodeIcon, UsersIcon, TrophyIcon, BriefcaseIcon } from "./Icons";
 const achievementsData: Achievement[] = [
   {
     icon: <BriefcaseIcon className="w-8 h-8 text-cyan-400" />,
-    title: "10+ Full-Stack Projects",
+    title: "React Native App Migration",
     description:
-      "Built and deployed multiple full-stack web projects demonstrating expertise in React, Node.js, and MongoDB.",
+      "Migrated a large-scale native Android/iOS app to React Native, reducing maintenance overhead by 30% and enabling seamless cross-platform performance.",
   },
   {
     icon: <CodeIcon className="w-8 h-8 text-cyan-400" />,
-    title: "400+ LeetCode Problems",
+    title: "Performance Optimization",
     description:
-      "Showcased strong data structures and algorithms proficiency by solving a wide range of coding challenges.",
+      "Improved app load time by 40% through efficient state management with Redux and optimized API integrations.",
   },
   {
     icon: <TrophyIcon className="w-8 h-8 text-cyan-400" />,
-    title: "LeetCode Contest Rating 1400+",
+    title: "Feature Development Impact",
     description:
-      "Ranked among the top percentile of competitive programmers, reflecting strong problem-solving skills under pressure.",
+      "Delivered key Mahadhan Farmer App features—including a rich media story module—that boosted user engagement by 25%.",
   },
   {
     icon: <UsersIcon className="w-8 h-8 text-cyan-400" />,
-    title: "Project Leadership",
+    title: "MBA in Data Science (Ongoing)",
     description:
-      "Led 3+ collaborative group projects, ensuring effective coordination, timely delivery, and successful outcomes.",
+      "Pursuing an MBA in Analytics & Data Science to strengthen business acumen and advanced data-driven decision-making skills.",
   },
 ];
 
 const AchievementCard: React.FC<{ achievement: Achievement }> = ({
   achievement,
-}) => {
-  return (
-    <div className="bg-slate-800/50 p-6 rounded-lg flex items-start space-x-4 shadow-none">
-      <div className="flex-shrink-0">{achievement.icon}</div>
-      <div>
-        <h3 className="font-bold text-lg text-slate-100">
-          {achievement.title}
-        </h3>
-        <p className="text-slate-400">{achievement.description}</p>
-      </div>
+}) => (
+  <div className="bg-slate-800/50 p-6 rounded-lg flex items-start space-x-4 shadow-none">
+    <div className="flex-shrink-0">{achievement.icon}</div>
+    <div>
+      <h3 className="font-bold text-lg text-slate-100">
+        {achievement.title}
+      </h3>
+      <p className="text-slate-400">{achievement.description}</p>
     </div>
-  );
-};
+  </div>
+);
 
 const Achievements: React.FC = () => {
   return (

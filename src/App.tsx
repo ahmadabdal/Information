@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <Header />
         <main className="container mx-auto px-4 sm:px-6 md:px-12 py-12">
           <Hero />
-          <Projects />
+          {/* <Projects /> */}
           <Skills />
           <Achievements />
           <Education />

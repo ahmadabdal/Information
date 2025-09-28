@@ -27,6 +27,7 @@ export interface EducationInfo {
   major: string;
   dates: string;
   coursework: string[];
+  gpa?: string;
 }
 
 export interface Certificate {
